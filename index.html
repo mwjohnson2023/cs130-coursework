@@ -1,123 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>CS130: Wednesday Fun!</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        Replace this text with your text!
-        <!-- Your job:
-        
-        1. Add a heading and a paragraph element:
-           https://eecs130.github.io/spring2021/html-reference/text-tags/
+   <head>
+        <!-- stylesheets and metadata go here -->
+       <title>My CS130 Homepage</title>       
+       <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+       <!-- HTML content tags go here. Change anything you want! -->
+       <header>
+           <h1>My CS130 Homepage</h1>
+       </header> 
+       <main>
+            <section id="tutorials">
+                <h2>Tutorials</h2>
+                <a href="https://mwjohnson2023.github.io/cs130-coursework/tutorial01/index.html">Tutorial 1</a>
+                <a href="https://mwjohnson2023.github.io/cs130-coursework/tutorial03/index.html">Tutorial 3</a>
+            </section>
+            <section id="homework">
+                <h2>Homework</h2>
+                <a href="https://mwjohnson2023.github.io/cs130-coursework/hw01/01_cssgrid/index.html">Homework 1 Part 1</a>
+                <a href="https://mwjohnson2023.github.io/cs130-coursework/hw01/02_flexbox/index.html">Homework 1 Part 2</a>
 
-        2. Add 3 image tags. Two should link to images in the images folder,
-           and one should link to an image on the internet:
-           https://eecs130.github.io/spring2021/html-reference/images/
 
-        3. Embed a YouTube or Vimeo video:
-        https://eecs130.github.io/spring2021/html-reference/media-tags/
-
-        4a. Add a list
-        https://eecs130.github.io/spring2021/html-reference/compound-tags/
-
-        4b. Add a table
-        https://eecs130.github.io/spring2021/html-reference/compound-tags/
-
-        5. Add some semantic tags to give your sections meaning
-        https://eecs130.github.io/spring2021/html-reference/semantic-tags/
-
-        6. If time, try to change the background color (hint: look at the stylesheet).
-        
-        -->
-        <header> <h1>Intro to Moby Dick</h1></header>
-        <p>
-            Loomings. Call me Ishmael. Some years ago--never mind how long precisely--having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I
-            have of driving off the spleen and regulating the circulation. </p>
-          
-        <p> Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my
-            hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off--then, I account it high time to get to sea as soon as I can. </p>
-          
-        <p>This is my substitute for pistol and ball. With a philosophical flourish Cato throws himself upon his sword; I quietly take to the ship. There is nothing surprising in this. If they but knew it, almost all men in their degree, some time or other, cherish
-            very nearly the same feelings towards the ocean with me.
-        </p>
-          
-        <p>
-            There now is your insular city of the Manhattoes, belted round by wharves as Indian isles by coral reefs--commerce surrounds it with her surf. Right and left, the streets take you waterward. Its extreme downtown is the battery, where that noble mole is washed by waves, and cooled by breezes, which a few hours previous were out of sight of land. Look at the crowds of water-gazers there.
-        </p>
-          
-        <p>
-            Circumambulate the city of a dreamy Sabbath afternoon. Go from Corlears Hook to Coenties Slip, and from thence, by Whitehall, northward. What do you see?--Posted like silent sentinels all around the town, stand thousands upon thousands of mortal men fixed in ocean reveries. Some leaning against the spiles; some seated upon the pier-heads; some looking over the bulwarks of ships from China; some high aloft in the rigging, as if striving to get a still better seaward peep. But these are all landsmen; of week days pent up in lath and plaster--tied to counters, nailed to benches, clinched to desks. How then is this? Are the green fields gone? What do they here?
-        </p>
-
-        <h1>This is heading 1</h1><!-- most important header -->
-        <h2>This is heading 2</h2>
-        <h3>This is heading 3</h3>
-        <h4>This is heading 4</h4>
-        <h5>This is heading 5</h5>
-        <h6>This is heading 6</h6><!-- least important header -->
-
-        <img src="https://kb.rspca.org.au/wp-content/uploads/2018/11/golder-retriever-puppy.jpeg" />
-        <img src="images/german-shepherd.jpg" />
-        <img src="images/puppy1.jpg" />
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/q8dtMX_wXNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <ol>
-            <li>First do this</li>
-            <li>then do that</li>
-            <li>finally to that other thing</li>
-        </ol>
-
-        <ul>
-            <li>dogs</li>
-            <li>cats</li>
-            <li>horses</li>
-        </ul>
-
-        <table>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Telephone</th>
-                <th>Customers Served</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Jocelyn</td>
-                <td>Sales</td>
-                <td>555-5555</td>
-                <td>50</td>
-              </tr>
-              <tr>
-                <td>Jasper</td>
-                <td>Sales</td>
-                <td>555-5555</td>
-                <td>50</td>
-              </tr>
-              <tr>
-                <td>Juan</td>
-                <td>Admin</td>
-                <td>555-5555</td>
-                <td>50</td>
-              </tr>
-              <tr>
-                <td>Jorge</td>
-                <td>Sales</td>
-                <td>555-5555</td>
-                <td>50</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>200</td>
-              </tr>
-            </tfoot>
-          </table>
-    </body>
+            </section>
+            <section id="inspiration">
+                <h2>Design Inspiration</h2>
+                <a href="https://rivian.com/">Rivian</a>
+                <a href="https://www.prada.com/us/en.html?utm_campaign=GoogleSearch_US&utm_medium=CPC&utm_source=Google&utm_content=Pure_Brand_Exact&s_kwcid=AL!8549!3!459276992379!e!!g!!prada&gclid=Cj0KCQjw9_mDBhCGARIsAN3PaFP0P4HOWODVZ2iOMgYyydcRPw502n1oFs43hzm1BK_-wR1uD9A-NrkaAvA-EALw_wcB&gclsrc=aw.ds">Prada</a>
+                <a href="https://www.oracle.com/index.html">Oracle</a>
+                <a href="https://www.balenciaga.com/en-us?ad=RSA&targetid=kwd-30438560&location=9021564&gclid=Cj0KCQjw9_mDBhCGARIsAN3PaFMq-6ZY2ql2NqPsNvVEVIfeO0b69nX5x3x6nWnMss7zBLQTrqSkdo8aAsZ_EALw_wcB">Balenciaga</a>
+                <a href="https://www.oneplus.com/">Oneplus</a>
+            </section>
+        </main>
+   </body>
 </html>
