@@ -2,22 +2,26 @@
 
 * {
     box-sizing: border-box;
+    background-color: #2D3142;
 }
 
 body {
-    margin: 0px;
+    margin: 3px;
     font-family: 'Noto Sans JP', sans-serif;
+    color: white;
 }
 header, section {
-    padding: 20px;
+    padding: 25px;
     font-family: 'Noto Sans JP', sans-serif;
+    color: white;
 }
 p, li {
     line-height: 1.5em;
 }
 
 #inspiration {
-    background-color: #F0F0F0;
+    background-color: #2D3142;
     padding-top: 40px;
     padding-bottom: 40px;
+    color: white;
 }
