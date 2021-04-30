@@ -266,6 +266,10 @@ fa-home {
     background-color: green;
     border-radius: 40%;
     width: 100px;
+    border-style: solid;
+    text-align: center;
+    outline-color: green;
+    border-color: green;
 }
 
 #home:hover {
