@@ -270,14 +270,17 @@ fa-home {
 
 #home:hover {
     color: darkgrey;
+    text-decoration: underline green;
 }
 
 #search:hover {
     color: darkgrey;
+    text-decoration: underline green;
 }
 
 #library:hover {
     color: darkgrey;
+    text-decoration: underline green;
 }
 
 #upgrade:hover {
@@ -292,16 +295,17 @@ fa-home {
 
 #playlists:hover {
         color: darkgrey;
-        text-underline-position: below green;
-        outline-color: green;
+        text-decoration: underline green;
     }
     
 #albums:hover {
         color: darkgrey;
+        text-decoration: underline green;
     }
     
 #artists:hover {
         color: darkgrey;
+        text-decoration: underline green;
 
 
 
