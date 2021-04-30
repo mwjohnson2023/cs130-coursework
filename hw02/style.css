@@ -59,6 +59,7 @@ footer {
 }
 
 
+
 /***************************/
 /* Accessories & Florishes */
 /***************************/
@@ -82,11 +83,20 @@ footer {
 
 /* Your Code Here */
 
-.aside {
-    visibility: visible;
-    content-visibility: visible;
-    margin-left: 50%;
-    line-height: 40%;
+.fa-spotify {
+    margin-left: 20px;
+    font-size: 40px;
+}
+.fa-home {
+    margin-left: 30px;
+}
+.fa-search {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.fa-headphones {
+    margin-left: 30px;
+    margin-top: 15px;
 }
 
 
@@ -96,28 +106,68 @@ footer {
 /********************************/
 
 /* Your Code Here */
-main {
+/* main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60px calc(100vh - 60px);
     grid-template-areas:
        "header"
        "gallery";
-    height: 100vh;
-}
+     height: 100vh; 
+}*/
 
 header {
-    grid-area: header;
-
+    display: grid;
+    grid-template-columns: 10(auto);
+    grid-template-rows: auto;
+    grid-template-areas:
+       "empty empty empty empty empty empty empty empty empty empty upgrades profiles";
 }
 
-#nav {
+#upgrade {
+    grid-area: upgrades;
+    margin-left: 10px;
+    font-size: 20px;
+    align-self: right;
+    border-style: solid;
+    border-radius: 30%;
+    text-align: center;
+}
+#profile {
+    grid-area: profiles;
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: left;
+    border-style: solid;
+    border-radius: 30%;
+    text-align: center;
+    background-color: rgb(187, 186, 186);
+}
+
+nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 30px;
+    grid-template-columns: 10(auto);
+    grid-template-rows: auto;
     grid-template-areas:
-       "playlists albums artists";
-    height: 100vh;
+       "playlists albums artists empty empty empty empty empty empty empty empty empty";
+}
+
+#playlists {
+    grid-area: playlists;
+    margin-left: 10px;
+    font-size: 20px;
+}
+#albums {
+    grid-area: albums;
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: left;
+}
+#artists {
+    grid-area: artists;
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: left;
 }
 
 
@@ -137,59 +187,66 @@ header {
 #featured-content {
     padding-top: 30px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
 .artist-card {
     width: 200px;
     padding: 3px;
-    line-height: 3px;
 }
 
-play-button {
-    visibility: none;
+#fa-play {
+    visibility: hidden;
     align-content: right;
 }
 
+fa-home {
+    color: white;
+}
+
 .artist-card > div {
-    border: solid 1px #CCC;
+    border: solid 0px #CCC;
+    background-color: rgb(62, 62, 62);
     padding: 10px;
     border-radius: 5px;
     height: 300px;
+    margin: 4px;
+    line-height: .99;
+    
 }
 
 
-img {
+.artist-card img{
     width: 150px;
     height: 160px;
     border-radius: 50%;
+    padding-bottom: 15px;
+}
+
+.play-button {
+    margin-left: 80%;
+    visibility: hidden;
 }
 
 
 
+@media screen and (max-width: 630px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 100px;
+        grid-template-areas:
+           "main"
+           "bottom";
+    }
+    aside {
+        display: none;
+    }
 
-@media screen and (max-width: 1200px) {
-    .card {
-        width: 33.33%;
-    }
-}
 
-@media screen and (max-width: 900px) {
-    .card {
-        width: 50%;
-    }
-    .image-div {
-        height: 350px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .card {
-        width: 100%;
-    }
-    
-    .image-div {
-        height: 450px;
+    #upgrade {
+        visibility: hidden;
     }
 }
 
@@ -204,8 +261,47 @@ img {
 /* Your Code Here */
 
 
-.card:hover .play-button {
-    content-visibility: visible;
+.artist-card:hover .play-button {
+    visibility: visible;
+    background-color: green;
+    border-radius: 40%;
+    width: 100px;
 }
+
+#home:hover {
+    color: darkgrey;
+}
+
+#search:hover {
+    color: darkgrey;
+}
+
+#library:hover {
+    color: darkgrey;
+}
+
+#upgrade:hover {
+    color: darkgrey;
+    background-color: darkgrey;
+}
+
+#profile:hover {
+    color: darkgrey;
+    background-color: darkgrey;
+}
+
+#playlists:hover {
+        color: darkgrey;
+        text-underline-position: below green;
+        outline-color: green;
+    }
+    
+#albums:hover {
+        color: darkgrey;
+    }
+    
+#artists:hover {
+        color: darkgrey;
+
 
 
