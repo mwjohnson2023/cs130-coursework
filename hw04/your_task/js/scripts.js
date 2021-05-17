@@ -17,10 +17,26 @@ const search = (ev) => {
 }
 
 const getTracks = (term) => {
-    console.log(`
-        get tracks from spotify based on the search term
-        "${term}" and load them into the #tracks section 
-        of the DOM...`);
+    let url = `https://www.apitutor.org/spotify/simple/v1/search?type=track&q=${term}&limit=5`;
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            for (const track of data) {
+                const template = `
+                <section class="track-item preview" data-preview-track="${track.preview_url}">
+                    <img src="${track.album.image_url}">
+                    <i class="fas play-track fa-play" aria-hidden="true"></i>
+                    <div class="label">
+                        <h3>${track.name}</h3>
+                        <p>
+                            ${track.artist.name}
+                        </p>
+                    </div>
+                </section>`;
+                document.querySelector('#tracks').innerHTML += template;
+                console.log(track);
+            }
+        })
 };
 
 const getAlbums = (term) => {
