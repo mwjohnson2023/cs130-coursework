@@ -114,12 +114,17 @@ const getArtistHTML = (data) => {
     
 
 const playTrack = (ev) => {
-    console.log(ev.currentTarget);
-    const currentsong = ev.currentTarget;
-    const preview_url = currentsong.getAttribute("data-preview-track");
-    audioPlayer.setAudioFile(preview_url);
-    audioPlayer.play();
-    document.querySelector('footer .track-item').innerHTML = currentsong.innerHTML;
+    if (audioPlayer.isPaused() == true) {
+        console.log(ev.currentTarget);
+        const currentsong = ev.currentTarget;
+        const preview_url = currentsong.getAttribute("data-preview-track");
+        audioPlayer.setAudioFile(preview_url);
+        document.querySelector('footer .track-item').innerHTML = currentsong.innerHTML;
+         audioPlayer.play();
+    }
+    else {
+        audioPlayer.pause();
+    }
 };
 
 document.querySelector('#search').onkeyup = (ev) => {
